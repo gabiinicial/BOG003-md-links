@@ -1,4 +1,12 @@
 {
   "name": "md-links",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "bin": {
+    "md-Links": "./md-link.js"
+  },
+  "dependencies": {
+    "axios": "^0.22.0",
+    "markdown-it": "^12.2.0",
+    "minimist": "^1.2.5"
+  }
 }

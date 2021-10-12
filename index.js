@@ -1,3 +1,1 @@
-module.exports = () => {
-  // ...
-};
+const mdLinks= require('./md-link.js')
