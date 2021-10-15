@@ -2,11 +2,30 @@
   "name": "md-links",
   "version": "0.1.0",
   "bin": {
-    "md-Links": "./md-link.js"
+    "md-Links": "md-link.js"
   },
   "dependencies": {
     "axios": "^0.22.0",
     "markdown-it": "^12.2.0",
     "minimist": "^1.2.5"
-  }
+  },
+  "description": "Libreria instalable para leer archivos md",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabiinicial/BOG003-md-links.git"
+  },
+  "author": "Gabriela Paez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabiinicial/BOG003-md-links/issues"
+  },
+  "homepage": "https://github.com/gabiinicial/BOG003-md-links#readme"
 }

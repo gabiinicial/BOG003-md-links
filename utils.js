@@ -1,18 +1,16 @@
 // file es un objeto que contiene el nombre del archivo y el contenido de ese archivo
-module.exports = function extractLinks(file) {
+ const extractLinks= (file) =>{
   const text = file.data;
   if (text === '') {
     return 'Error not Found'
   };
-  
+  let urls = text.match(/\[(.*?)\]\((https?:\/\/.*\.(?:png|jpg)|(https?:\/\/[\w\d./?=#]+)\))/gi);
 
-  let urls = text.match(/([a-z\-_0-9\/\:\.]*\/*)|(https?:\/\/.*\.(?:png|jpg))/gi);
-  //let alt = text.match(/\[([\w\s\d]+)\]\((https?:\/\/[\w\d./?=#]+)\)/gi);
   // let alt = text.match(/\[([\w\s\d]+)\]\((https?:\/\/[\w\d./?=#]+)\)|/gi);
-  let alt = text.match(/!\[(.*)\]\((.+)\)|\[([\w\s\d]+)\]\((https?:\/\/[\w\d./?=#]+)\)/gi);
+  //let alt = text.match(/(https?:\/\/.*\.(?:png|jpg)|(https?:\/\/[\w\d./?=#]+)\))/gi);
+ // const text= (alt)=>{
 
-console.log(alt);
-  if (urls === null) {
+if (urls === null) {
     return '';
   }
   if (typeof text === 'string') {
@@ -20,20 +18,21 @@ console.log(alt);
     let links = []
     // extrae los links que solo incluyan https:// y http://
     if (urls !== null || urls !== undefined) {
-      urls.map((urls,) => {
-        if (urls.includes('https://') || urls.includes('http://')) {
-           let text = findUrlInArray(urls, alt);
-         //console.log(alt);
-          //console.log(text);
-          //const text=  extraxtTitle(alt, urls)
+      urls.map((urls) => {
+        //if (urls.includes('https://') || urls.includes('http://')){
+          //const filterUrl= urls.includes('https://'||'http://');
+          let url= '';
+          if(urls.includes(')')){
+            url +=  urls.substring(urls.indexOf('https'), urls.length -1)
+          }else{
+           url += urls.substring(urls.indexOf('https'))
+          }
           urlObj = {
-            href: urls,
+            href: url,
             path: file.fileName,
-            text: text
+            text: urls.substring(1,urls.indexOf("]"))
           }
           links.push(urlObj);
-          }
-        
       });
     }
     //console.log(alt);
@@ -44,25 +43,17 @@ console.log(alt);
   }
 };
 
-function extractTitle(text) {
-    return text.substring(1,text.indexOf("]"));
+   //let text = findUrlInArray(urls, alt);
+         //console.log(alt);
+          //console.log(text);
+          //const text=  extraxtTitle(alt, urls)
+// function extractTitle(text) {
+//     return text.substring(1,text.indexOf("]"));
 
-}
- function findUrlInArray( array, alt){
-
- //console.log('url es:',url);
- // console.log('array es:',array);
-  
- for (let index = 0; index < alt.length; index++) {
-  
-     if (null !== alt[index] &&
-        undefined !== alt[index] && 
-        array.includes(alt)[index]) 
-     {
-      let text = extractTitle(alt[index]);
-      //console.log('lo encontre', text);
-      //arr.splice(index, 1);
-       console.log(text);
-    }
-  }
-}
+// }
+  function findUrlInArray(alt){
+alt.map((url)=>{
+return url;
+})
+ }
+module.exports = (extractLinks)
