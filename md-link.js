@@ -98,7 +98,7 @@ const sendGetRequest = (url) => {
       })
       .catch((err) => {
         //console.log(err.message);
-        if (err.response >= '400' || err.response === null) { //err.message.includes('ENOTFOUND')){
+        if (err.response >= '400' || err.response === null  || err.response === undefined) { //err.message.includes('ENOTFOUND')){
           return {
             href: links.href,
             text: links.text,
@@ -119,9 +119,15 @@ mdLinks = (path, option) => new Promise((resolve, reject) => {
         sendGetRequest(arrayLinks).then(res => {
           resolve(res);
         })
-      } else if(!option.validate && !option.stats){
+      }  if(!option.validate && !option.stats){
          resolve(arrayLinks);
-       }
+       }if( option.stats && !option.validate){
+         resolve(arrayLinks);
+       } if (option.validate && option.stats) {
+        sendGetRequest(arrayLinks).then(res => {
+          resolve(res);
+        })
+      }
     })
     .catch((errr) => {
       const errMenssage = 'ups algo fallo'
