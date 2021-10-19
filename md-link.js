@@ -1,5 +1,4 @@
-#!/usr/bin/env node
- //'use strict';
+//'use strict';
 const process = require('process');
 const path = require('path');
 const extractLinks = require('./utils.js');

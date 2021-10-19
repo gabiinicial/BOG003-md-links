@@ -1,6 +1,6 @@
-const fn = require('./md-link.js')
+#!/usr/bin/env node
+const fn =require('./md-link.js')
 let args = process.argv;
-const argv = process.argv[2]
  const path = require('path');
 const options= {
     validate: false,
@@ -16,7 +16,7 @@ process.argv.forEach(command => {
     }
        //console.log(command);
    });
- fn.mdLinks(args, options)
+ fn.mdLinks(absoluted, options)
  .then((res)=>{
     if(options.validate && !options.stats){
     console.log(res);
