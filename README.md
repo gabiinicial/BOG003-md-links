@@ -17,7 +17,10 @@ que permitira leer archivos de formato Markdown, extraer los links o Url que con
 ***
 ![](https://diarioinforme.com/wp-content/uploads/2021/07/1627738673_666_Como-crear-una-nueva-rama-en-GitHub.png)
 ***
-
+Instala el paquete por el Gestor **npm** a travez de de el siguiente comando..
+```
+npm i md-linnks
+```
 
 
 ## 3. Objetivos de aprendizaje
