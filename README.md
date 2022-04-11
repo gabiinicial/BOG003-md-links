@@ -14,14 +14,31 @@ que permitira leer archivos de formato Markdown, extraer los links o Url que con
 ## 2. Pasos a seguir
 
 * de queres visualizar mi codigo accede a la branch **Gaby** donde visualizaras todo mi codigo sobre este proyecto
-***
+
 ![](https://diarioinforme.com/wp-content/uploads/2021/07/1627738673_666_Como-crear-una-nueva-rama-en-GitHub.png)
 ***
 Instala el paquete por el Gestor **npm** a travez de de el siguiente comando..
 ```
 npm i md-linnks
 ```
-
+Al tener la Libreria ya Instalada con el siguiente comando podra **extraer todos los links del Archivo MD** 
+```
+md-Links path-file
+```
+El siguiente comando este comando con su parametro **--validate**  podra **valida todos que todos los links del Archivo MD existan** 
+y de ser asi retorna en **status:200** si no **status:400**
+```
+md-Links path-file --validate
+```
+Y comando con su parametro **--stats**  **valida todos los links del Archivo MD** 
+```
+md-Links path-file --stats
+```
+que retorna los siguientes puntos:
+``
+total: 5
+unique: 4
+``
 
 ## 3. Objetivos de aprendizaje
 
