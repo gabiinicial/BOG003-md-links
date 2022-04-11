@@ -14,7 +14,7 @@ que permitira leer archivos de formato Markdown, extraer los links o Url que con
 
 ## 2. Pasos a seguir
 
-* ![](https://images.app.goo.gl/DsMTr18vRKh7Lb9L7)
+![](https://images.app.goo.gl/DsMTr18vRKh7Lb9L7)
 
 ## 3. Objetivos de aprendizaje
 
