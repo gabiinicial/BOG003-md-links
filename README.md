@@ -13,7 +13,7 @@ que permitira leer archivos de formato Markdown, extraer los links o Url que con
 
 ## 2. Pasos a seguir
 
-* de queres visualizar mi codigo accede a la branch **Gaby** donde visualizaras todo mi codigo sobre este proyecto
+* de querer visualizar mi codigo accede a la branch **Gaby** donde visualizaras todo mi codigo sobre este proyecto
 
 ![](https://diarioinforme.com/wp-content/uploads/2021/07/1627738673_666_Como-crear-una-nueva-rama-en-GitHub.png)
 ***
