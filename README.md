@@ -51,6 +51,7 @@ que retorna los siguientes puntos:
 total: 5
 unique: 4
 ``
+
 Y por ultimo al querer incresar el parametro **--validate y --stats** devolvera los valores de stats y un valor extra que dira los Links que no existan
 ``
 total: 5
