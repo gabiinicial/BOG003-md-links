@@ -14,7 +14,7 @@ que permitira leer archivos de formato Markdown, extraer los links o Url que con
 
 ## 2. Pasos a seguir
 
-![](https://images.app.goo.gl/DsMTr18vRKh7Lb9L7)
+https://diarioinforme.com/wp-content/uploads/2021/07/1627738673_666_Como-crear-una-nueva-rama-en-GitHub.png)
 
 ## 3. Objetivos de aprendizaje
 
