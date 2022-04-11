@@ -30,6 +30,18 @@ y de ser asi retorna en **status:200** si no **status:400**
 ```
 md-Links path-file --validate
 ```
+Ejemplo:
+``
+[
+  {
+    href: 'https://developers.google.c',
+    text: 'motor de JavaScript V8 de Chrome',
+    path: 'C:\\Users\\Gabi\\OneDrive\\Documentos\\MD-links\\BOG003-md-links\\README1.md',
+    status: 400,
+    statusText: 'Fail'
+  }
+  ]
+``
 Y comando con su parametro **--stats**  **valida todos los links del Archivo MD** 
 ```
 md-Links path-file --stats
