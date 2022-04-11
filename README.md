@@ -3,7 +3,7 @@
 ## Índice
 
 * [1. Preámbulo](#1-Descripcion )
-* [2. Pasos a seguir](#2-Pasos a seguir)
+* [2. Pasos a seguir](#2-Pasos-a-seguir)
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 * 
 ***
