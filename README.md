@@ -58,6 +58,9 @@ total: 5
 unique: 4
 Broken: 1
 ``
+```
+md-Links path-file --validate --stats
+```
 
 ## 3.Objetivos de aprendizaje
 
